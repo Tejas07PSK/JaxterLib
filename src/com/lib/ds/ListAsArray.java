@@ -36,7 +36,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public boolean insert(E item)
+    public synchronized boolean insert(E item)
     {
 
         if (this.end == (this.max_size - 1))
@@ -64,7 +64,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    private Object [] copyIntoNewBigArray(Object [] list, int length, int end_ptr)
+    private synchronized Object [] copyIntoNewBigArray(Object [] list, int length, int end_ptr)
     {
 
         Object temp_list [] = new Object [length];
@@ -78,7 +78,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public boolean insert(E item, int index)
+    public synchronized boolean insert(E item, int index)
     {
 
         if (index >= this.max_size)
@@ -117,7 +117,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public boolean isEmpty()
+    public synchronized boolean isEmpty()
     {
 
         if (this.end == -1)
@@ -135,7 +135,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public E remove()
+    public synchronized E remove()
     {
         if (isEmpty())
         {
@@ -151,7 +151,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public E remove(int index)
+    public synchronized E remove(int index)
     {
 
         if (isEmpty())
@@ -187,14 +187,14 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public int getSizeOfList()
+    public synchronized int getSizeOfList()
     {
 
         return (this.end + 1);
 
     }
 
-    public boolean replace(E item, int index)
+    public synchronized boolean replace(E item, int index)
     {
 
         if (isEmpty())
@@ -223,7 +223,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public E get()
+    public synchronized E get()
     {
 
         if (isEmpty())
@@ -237,7 +237,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public E get(int index)
+    public synchronized E get(int index)
     {
 
         if (isEmpty())
@@ -261,6 +261,44 @@ public class ListAsArray <E> implements Serializable
 
         }
         return ((E)this.list[index]);
+
+    }
+
+    public synchronized Object [] reverseListCopy()
+    {
+
+        int l = 0;
+        int r = this.end;
+        Object [] temp = new Object[(this.end + 1)];
+        while (l <= r)
+        {
+
+            temp [l] = this.list[r];
+            temp [r] = this.list[l];
+            l += 1;
+            r -= 1;
+
+        }
+        return (temp);
+
+    }
+
+    public synchronized void reverseListInPlace()
+    {
+
+        int l = 0;
+        int r = this.end;
+        Object temp = null;
+        while (l <= r)
+        {
+
+            temp = this.list[r];
+            this.list[r] = this.list[l];
+            this.list[l] = temp;
+            l += 1;
+            r -= 1;
+
+        }
 
     }
 

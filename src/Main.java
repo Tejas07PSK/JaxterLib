@@ -19,7 +19,7 @@ public class Main
         ListAsArray <Integer> lst = new ListAsArray <Integer> (arr);
         lst.insert(11);
         printListItems(lst);
-        System.out.println(lst.get(17));
+        lst.reverseListInPlace();
         printListItems(lst);
 
     }
