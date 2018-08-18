@@ -17,18 +17,15 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        LinkedList <Integer> ll = new LinkedList <Integer> ();
-        ll.insertNode(88, 5);
-        ll.insertNode(77);
-        ll.insertNode(11);
-        ll.insertNode(22);
-        ll.insertNode(66);
-        ll.printList();
-        System.out.println(ll.length());
-        ll.reverseListInPlace();
-        ll.printList();
-        System.out.println(ll.length());
-        (ll.reverseList()).printList();
+        Object [] arr = {2, 3, 4};
+        ListAsArray <Integer> lst = new ListAsArray <Integer> (arr);
+        ListAsArray <Integer> lst2 = new ListAsArray <Integer> ();
+        lst2.insert(33);
+        lst2.insert(11);
+        lst.printLsitItems();
+        lst2.printLsitItems();
+        lst2.concat(lst);
+        lst2.printLsitItems();
 
     }
 
