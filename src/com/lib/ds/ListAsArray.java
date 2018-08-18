@@ -89,6 +89,13 @@ public class ListAsArray <E> implements Serializable
             return (false);
 
         }
+        else if (item == null)
+        {
+
+            System.out.println("Null value not inserted");
+            return (false);
+
+        }
         else if ((index > this.end) && (this.end < (this.max_size -1)))
         {
 
