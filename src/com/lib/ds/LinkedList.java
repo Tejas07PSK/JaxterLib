@@ -416,4 +416,18 @@ public class LinkedList <E> implements Serializable
 
     }
 
+    public synchronized void concat(LinkedList <E> ll)
+    {
+
+        Node tmp = ll.start;
+        while(tmp !=  null)
+        {
+
+            this.insertNode(tmp.getData());
+            tmp = tmp.ptr;
+
+        }
+
+    }
+
 }
