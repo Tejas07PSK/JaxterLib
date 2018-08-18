@@ -238,6 +238,7 @@ public class LinkedList <E> implements Serializable
             Node temp = this.start;
             this.start = (temp.ptr);
             temp.ptr = null;
+            this.end = ((this.length == 1) ? this.start : this.end);
             this.length -= 1;
             return (temp.getData());
 
