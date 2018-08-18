@@ -10,6 +10,7 @@ import java.lang.Exception;
 
 import com.lib.ds.LinkedList;
 import com.lib.ds.ListAsArray;
+import com.lib.ds.StackAsArray;
 
 public class Main
 {
@@ -18,14 +19,12 @@ public class Main
     {
 
         Object [] arr = {2, 3, 4};
-        ListAsArray <Integer> lst = new ListAsArray <Integer> (arr);
-        ListAsArray <Integer> lst2 = new ListAsArray <Integer> ();
-        lst2.insert(33);
-        lst2.insert(11);
-        lst.printLsitItems();
-        lst2.printLsitItems();
-        lst2.concat(lst);
-        lst2.printLsitItems();
+        StackAsArray <Integer> sar = new StackAsArray <Integer> (arr);
+        sar.printElementsInStack();
+        StackAsArray <Integer> sar2 = new StackAsArray <Integer> ();
+        sar.printElementsInStack();
+        sar2.printElementsInStack();
+        System.out.println(sar2.isEmpty());
 
     }
 

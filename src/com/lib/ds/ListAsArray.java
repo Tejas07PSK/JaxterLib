@@ -50,7 +50,7 @@ public class ListAsArray <E> implements Serializable
         if (item == null)
         {
 
-            System.out.println("Null value not inserted");
+            System.out.println("Null value not inserted!!");
             return (false);
 
         }
@@ -92,7 +92,7 @@ public class ListAsArray <E> implements Serializable
         else if (item == null)
         {
 
-            System.out.println("Null value not inserted");
+            System.out.println("Null value not inserted!!");
             return (false);
 
         }
