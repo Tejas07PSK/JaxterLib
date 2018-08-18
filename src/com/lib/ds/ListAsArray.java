@@ -9,7 +9,6 @@
 package com.lib.ds;
 
 import java.io.Serializable;
-import java.util.List;
 
 public class ListAsArray <E> implements Serializable
 {
