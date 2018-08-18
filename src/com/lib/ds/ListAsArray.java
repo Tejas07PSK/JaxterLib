@@ -85,7 +85,7 @@ public class ListAsArray <E> implements Serializable
         if (index >= this.max_size)
         {
 
-            System.out.println("Out of Bounds Error, index is greater than max_size of array!!");
+            System.out.println("Out of Bounds Error, index is greater than max_size of array!! " + index);
             return (false);
 
         }
@@ -97,7 +97,7 @@ public class ListAsArray <E> implements Serializable
             return (true);
 
         }
-        else if ((index < this.end) && (this.end == (this.max_size -1)))
+        else if ((index <= this.end) && (this.end == (this.max_size -1)))
         {
 
             this.max_size *= 2;
@@ -165,7 +165,7 @@ public class ListAsArray <E> implements Serializable
         else if (index >= this.max_size)
         {
 
-            System.out.println("Out of Bounds Error, index is greater than max_size of array!!");
+            System.out.println("Out of Bounds Error, index is greater than max_size of array!! " + index);
             return (null);
 
         }
@@ -208,7 +208,7 @@ public class ListAsArray <E> implements Serializable
         else if (index >= this.max_size)
         {
 
-            System.out.println("Out of Bounds Error, index is greater than max_size of array!!");
+            System.out.println("Out of Bounds Error, index is greater than max_size of array!! " + index);
             return (false);
 
         }
@@ -251,7 +251,7 @@ public class ListAsArray <E> implements Serializable
         else if (index >= this.max_size)
         {
 
-            System.out.println("Out of Bounds Error, index is greater than max_size of array!!");
+            System.out.println("Out of Bounds Error, index is greater than max_size of array!! " + index);
             return (null);
 
         }

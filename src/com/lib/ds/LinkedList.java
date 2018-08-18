@@ -99,8 +99,20 @@ public class LinkedList <E> implements Serializable
         {
 
             Node n = new Node(val);
-            this.start = ((this.start == null) ? n : this.start);
-            this.end = n;
+            if (this.start == null)
+            {
+
+                this.start = n;
+                this.end = this.start;
+
+            }
+            else
+            {
+
+                (this.end).ptr = n;
+                this.end = n;
+
+            }
             this.length += 1;
             return (true);
 
@@ -122,8 +134,20 @@ public class LinkedList <E> implements Serializable
         {
 
             Node n = new Node(val);
-            this.start = ((this.start == null) ? n : this.start);
-            this.end = n;
+            if (this.start == null)
+            {
+
+                this.start = n;
+                this.end = this.start;
+
+            }
+            else
+            {
+
+                (this.end).ptr = n;
+                this.end = n;
+
+            }
             this.length += 1;
             return (true);
 
@@ -268,7 +292,7 @@ public class LinkedList <E> implements Serializable
 
             Node tmp = this.start;
             long count = 1;
-            while (count <= index)
+            while (count < index)
             {
 
                 count += 1;
@@ -329,7 +353,7 @@ public class LinkedList <E> implements Serializable
 
             Node tmp = this.start;
             long count = 1;
-            while (count <= index)
+            while (count < index)
             {
 
                 count += 1;
@@ -355,6 +379,9 @@ public class LinkedList <E> implements Serializable
             prev = curr;
             curr = tmp;
         }
+        tmp = this.start;
+        this.start = this.end;
+        this.end = tmp;
 
     }
 
@@ -371,6 +398,21 @@ public class LinkedList <E> implements Serializable
 
         }
         return (new_lst);
+
+    }
+
+    public void printList()
+    {
+
+        Node tmp = this.start;
+        while (tmp != null)
+        {
+
+            System.out.print(tmp.getData() + " ");
+            tmp = tmp.ptr;
+
+        }
+        System.out.print("\n");
 
     }
 

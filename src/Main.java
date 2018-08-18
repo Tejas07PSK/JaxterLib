@@ -7,6 +7,8 @@
  */
 
 import java.lang.Exception;
+
+import com.lib.ds.LinkedList;
 import com.lib.ds.ListAsArray;
 
 public class Main
@@ -15,26 +17,19 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        Object arr [] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        ListAsArray <Integer> lst = new ListAsArray <Integer> (arr);
-        lst.insert(11);
-        printListItems(lst);
-        lst.reverseListInPlace();
-        printListItems(lst);
+        LinkedList <Integer> ll = new LinkedList <Integer> ();
+        ll.insertNode(88, 5);
+        ll.insertNode(77);
+        ll.insertNode(11);
+        ll.insertNode(22);
+        ll.insertNode(66);
+        ll.printList();
+        System.out.println(ll.length());
+        ll.reverseListInPlace();
+        ll.printList();
+        System.out.println(ll.length());
+        (ll.reverseList()).printList();
 
     }
 
-    private static void printListItems(ListAsArray <Integer> l)
-    {
-
-        for (int i = 0; i < l.getSizeOfList(); i++)
-        {
-
-            System.out.print(l.get(i) + "  ");
-
-        }
-        System.out.print("\n");
-        System.out.println(l.getSizeOfList());
-
-    }
 }
