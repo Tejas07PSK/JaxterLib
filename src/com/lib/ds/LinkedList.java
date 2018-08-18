@@ -306,7 +306,7 @@ public class LinkedList <E> implements Serializable
 
     }
 
-    public E get()
+    public synchronized E get()
     {
 
         if (this.start == null)
@@ -325,7 +325,7 @@ public class LinkedList <E> implements Serializable
 
     }
 
-    public E get(long index)
+    public synchronized E get(long index)
     {
 
         if (this.start == null)
@@ -366,7 +366,7 @@ public class LinkedList <E> implements Serializable
 
     }
 
-    public void reverseListInPlace()
+    public synchronized void reverseListInPlace()
     {
 
         Node curr = this.start;
@@ -385,7 +385,7 @@ public class LinkedList <E> implements Serializable
 
     }
 
-    public LinkedList<E> reverseList()
+    public synchronized LinkedList<E> reverseList()
     {
 
         LinkedList <E> new_lst = new LinkedList <E> ();
@@ -401,7 +401,7 @@ public class LinkedList <E> implements Serializable
 
     }
 
-    public void printList()
+    public synchronized void printList()
     {
 
         Node tmp = this.start;

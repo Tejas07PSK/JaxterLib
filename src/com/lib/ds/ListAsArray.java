@@ -9,6 +9,7 @@
 package com.lib.ds;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class ListAsArray <E> implements Serializable
 {
@@ -300,6 +301,31 @@ public class ListAsArray <E> implements Serializable
             r -= 1;
 
         }
+
+    }
+
+    public synchronized void concat(ListAsArray <E> lst)
+    {
+
+        for (int i = 0; i <= lst.end; i += 1)
+        {
+
+            this.insert(lst.get(i));
+
+        }
+
+    }
+
+    public synchronized void printLsitItems()
+    {
+
+        for (int i = 0; i <= this.end; i += 1)
+        {
+
+            System.out.print(this.get(i) + " ");
+
+        }
+        System.out.print("\n");
 
     }
 
