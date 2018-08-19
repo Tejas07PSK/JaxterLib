@@ -36,34 +36,6 @@ public class LinkedList <E> implements Serializable
 
         }
 
-        protected synchronized void setData(E data)
-        {
-
-            this.data = data;
-
-        }
-
-        protected synchronized E getData()
-        {
-
-            return (this.data);
-
-        }
-
-        protected synchronized void setPtr(Node ptr)
-        {
-
-            this.ptr = ptr;
-
-        }
-
-        protected synchronized Node getPtr()
-        {
-
-            return (this.ptr);
-
-        }
-
     }
 
     private Node start;
@@ -209,7 +181,7 @@ public class LinkedList <E> implements Serializable
             prev.ptr = null;
             this.end = prev;
             this.length -= 1;
-            return (tmp.getData());
+            return (tmp.data);
 
         }
 
@@ -240,7 +212,7 @@ public class LinkedList <E> implements Serializable
             temp.ptr = null;
             this.end = ((this.length == 1) ? this.start : this.end);
             this.length -= 1;
-            return (temp.getData());
+            return (temp.data);
 
         }
         else
@@ -258,7 +230,7 @@ public class LinkedList <E> implements Serializable
             Node n = tmp.ptr;
             tmp.ptr = (tmp.ptr).ptr;
             this.length -= 1;
-            return (n.getData());
+            return (n.data);
 
         }
 
@@ -284,7 +256,7 @@ public class LinkedList <E> implements Serializable
         else if (index == 1)
         {
 
-            (this.start).setData(val);
+            (this.start).data = val;
             return (true);
 
         }
@@ -300,7 +272,7 @@ public class LinkedList <E> implements Serializable
                 tmp = tmp.ptr;
 
             }
-            tmp.setData(val);
+            tmp.data = val;
             return (true);
 
         }
@@ -320,7 +292,7 @@ public class LinkedList <E> implements Serializable
         else
         {
 
-            return ((this.end).getData());
+            return ((this.end).data);
 
         }
 
@@ -346,7 +318,7 @@ public class LinkedList <E> implements Serializable
         else if (index == 1)
         {
 
-            return ((this.start).getData());
+            return ((this.start).data);
 
         }
         else
@@ -361,7 +333,7 @@ public class LinkedList <E> implements Serializable
                 tmp = tmp.ptr;
 
             }
-            return (tmp.getData());
+            return (tmp.data);
 
         }
 
@@ -394,7 +366,7 @@ public class LinkedList <E> implements Serializable
         for (long i = 1; i <= this.length; i += 1)
         {
 
-            System.out.println(((i == 1) ? new_lst.insertNode(ref.getData()) : new_lst.insertNode(ref.getData(), 1)));
+            System.out.println(((i == 1) ? new_lst.insertNode(ref.data) : new_lst.insertNode(ref.data, 1)));
             ref = ref.ptr;
 
         }
@@ -409,7 +381,7 @@ public class LinkedList <E> implements Serializable
         while (tmp != null)
         {
 
-            System.out.print(tmp.getData() + " ");
+            System.out.print(tmp.data + " ");
             tmp = tmp.ptr;
 
         }
@@ -424,7 +396,7 @@ public class LinkedList <E> implements Serializable
         while(tmp !=  null)
         {
 
-            this.insertNode(tmp.getData());
+            this.insertNode(tmp.data);
             tmp = tmp.ptr;
 
         }
