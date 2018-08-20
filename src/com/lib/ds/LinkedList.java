@@ -51,7 +51,7 @@ public class LinkedList <E> implements Serializable
 
     }
 
-    public synchronized  boolean isEmpty()
+    public synchronized boolean isEmpty()
     {
 
         if (this.length == 0)
