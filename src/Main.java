@@ -16,12 +16,12 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        QueueAsArray <Integer> obj = new QueueAsArray <Integer> ();
+        QueueAsLinkedList <Integer> obj = new QueueAsLinkedList <Integer> ();
         obj.enQueue(45);
         obj.enQueue(34);
         obj.enQueue(33);
-        obj.insert(66, 0);
-        obj.insert(45, 4);
+        obj.insert(66, 1);
+        obj.insert(45, 3);
         obj.insert(12,2);
         obj.printElementsInQueue();
         System.out.println(obj.deQueue());
