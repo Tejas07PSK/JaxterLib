@@ -195,7 +195,7 @@ public class ListAsArray <E> implements Serializable
 
     }
 
-    public synchronized int getSizeOfList()
+    public synchronized int getLengthOfList()
     {
 
         return (this.end + 1);
