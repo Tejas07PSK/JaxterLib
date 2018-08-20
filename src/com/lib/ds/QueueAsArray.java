@@ -61,7 +61,7 @@ public class QueueAsArray <E> extends ListAsArray <E> implements Serializable
     public synchronized int getLengthOfQueue()
     {
 
-        return (super.getSizeOfList());
+        return (super.getLengthOfList());
 
     }
 
