@@ -51,7 +51,7 @@ public class StackAsLinkedList <E> extends LinkedList <E> implements Serializabl
 
     }
 
-    public synchronized long getSizeOfStack()
+    public synchronized long getLengthOfStack()
     {
 
         return (super.length());
