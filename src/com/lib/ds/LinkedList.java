@@ -47,6 +47,25 @@ public class LinkedList <E> implements Serializable
 
         this.start = null;
         this.end = null;
+        this.length = 0;
+
+    }
+
+    public synchronized  boolean isEmpty()
+    {
+
+        if (this.length == 0)
+        {
+
+            return (true);
+
+        }
+        else
+        {
+
+            return (false);
+
+        }
 
     }
 
