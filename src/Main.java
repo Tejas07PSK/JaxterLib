@@ -8,10 +8,7 @@
 
 import java.lang.Exception;
 
-import com.lib.ds.LinkedList;
-import com.lib.ds.ListAsArray;
-import com.lib.ds.StackAsArray;
-import com.lib.ds.StackAsLinkedList;
+import com.lib.ds.*;
 
 public class Main
 {
@@ -19,6 +16,18 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
+        QueueAsArray <Integer> obj = new QueueAsArray <Integer> ();
+        obj.enQueue(45);
+        obj.enQueue(34);
+        obj.enQueue(33);
+        obj.insert(66, 0);
+        obj.insert(45, 4);
+        obj.insert(12,2);
+        obj.printElementsInQueue();
+        System.out.println(obj.deQueue());
+        obj.printElementsInQueue();
+        System.out.println(obj.remove(2));
+        obj.printElementsInQueue();
 
 
     }
