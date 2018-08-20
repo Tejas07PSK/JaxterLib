@@ -58,7 +58,7 @@ public class StackAsArray <E> extends ListAsArray <E> implements Serializable
 
     }
 
-    public synchronized int getSizeOfStack()
+    public synchronized int getLengthOfStack()
     {
 
         return (super.getSizeOfList());
