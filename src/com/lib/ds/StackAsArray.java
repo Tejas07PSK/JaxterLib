@@ -86,10 +86,10 @@ public class StackAsArray <E> extends ListAsArray <E> implements Serializable
 
     }
 
-    public synchronized Object [] reverseStackCopy()
+    public synchronized StackAsArray <E> reverseStackCopy()
     {
 
-        return (super.reverseListCopy());
+        return (new StackAsArray <E> (super.reverseListCopy()));
 
     }
 
