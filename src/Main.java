@@ -16,9 +16,10 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        Double arr [] = {3.66, 5.87, 13.22, -26.33, 1.30, 44.33, 56.65, -14.43, 1.09, 2.67, 7.22};
-        arr = SelectionSort.for_DoubleArray(arr);
-        for (Double i : arr)
+        Float arr [] = {3.66f, 5.87f, 13.22f, -26.33f, 1.30f, 44.33f, 56.65f, -14.43f, 1.09f, 2.67f, 7.22f};
+        //long arr [] = {23L, 11L, 12L, 5L, 1L, -2L, 34L, 55L, 1L, 2L, 56L, 77L, 34L};
+        arr = BubbleSort.for_FloatArray(arr);
+        for (float i : arr)
         {
 
             System.out.print(i + " ");
