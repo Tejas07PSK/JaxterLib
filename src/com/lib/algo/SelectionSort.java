@@ -146,6 +146,13 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i] == arr[min_idx])
+            {
+
+                continue;
+
+            }
+
             arr[i] = arr[i] ^ arr[min_idx];
             arr[min_idx] = arr[i] ^ arr[min_idx];
             arr[i] = arr[i] ^ arr[min_idx];
