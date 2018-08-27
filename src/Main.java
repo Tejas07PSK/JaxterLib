@@ -8,7 +8,7 @@
 
 import java.lang.Exception;
 
-import com.lib.ds.*;
+import com.lib.algo.*;
 
 public class Main
 {
@@ -16,19 +16,15 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        QueueAsLinkedList <Integer> obj = new QueueAsLinkedList <Integer> ();
-        obj.enQueue(45);
-        obj.enQueue(34);
-        obj.enQueue(33);
-        obj.insert(66, 1);
-        obj.insert(45, 3);
-        obj.insert(12,2);
-        obj.printElementsInQueue();
-        System.out.println(obj.deQueue());
-        obj.printElementsInQueue();
-        System.out.println(obj.remove(2));
-        obj.printElementsInQueue();
+        Double arr [] = {3.66, 5.87, 13.22, -26.33, 1.30, 44.33, 56.65, -14.43, 1.09, 2.67, 7.22};
+        arr = SelectionSort.for_DoubleArray(arr);
+        for (Double i : arr)
+        {
 
+            System.out.print(i + " ");
+
+        }
+        System.out.print("\n");
 
     }
 

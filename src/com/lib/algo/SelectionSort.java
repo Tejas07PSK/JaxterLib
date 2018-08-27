@@ -34,6 +34,12 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i] == arr[min_idx])
+            {
+
+                continue;
+
+            }
             arr[i] = (byte)(arr[i] ^ arr[min_idx]);
             arr[min_idx] = (byte)(arr[i] ^ arr[min_idx]);
             arr[i] = (byte)(arr[i] ^ arr[min_idx]);
@@ -60,6 +66,12 @@ public class SelectionSort implements Serializable
                     min_idx = j;
 
                 }
+
+            }
+            if (arr[i].equals(arr[min_idx]))
+            {
+
+                continue;
 
             }
             arr[i] = (byte)(arr[i] ^ arr[min_idx]);
@@ -90,6 +102,12 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i] == arr[min_idx])
+            {
+
+                continue;
+
+            }
             arr[i] = (short)(arr[i] ^ arr[min_idx]);
             arr[min_idx] = (short)(arr[i] ^ arr[min_idx]);
             arr[i] = (short)(arr[i] ^ arr[min_idx]);
@@ -116,6 +134,12 @@ public class SelectionSort implements Serializable
                     min_idx = j;
 
                 }
+
+            }
+            if (arr[i].equals(arr[min_idx]))
+            {
+
+                continue;
 
             }
             arr[i] = (short)(arr[i] ^ arr[min_idx]);
@@ -181,6 +205,12 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i].equals(arr[min_idx]))
+            {
+
+                continue;
+
+            }
             arr[i] = arr[i] ^ arr[min_idx];
             arr[min_idx] = arr[i] ^ arr[min_idx];
             arr[i] = arr[i] ^ arr[min_idx];
@@ -209,6 +239,12 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i] == arr[min_idx])
+            {
+
+                continue;
+
+            }
             arr[i] = arr[i] ^ arr[min_idx];
             arr[min_idx] = arr[i] ^ arr[min_idx];
             arr[i] = arr[i] ^ arr[min_idx];
@@ -235,6 +271,12 @@ public class SelectionSort implements Serializable
                     min_idx = j;
 
                 }
+
+            }
+            if (arr[i].equals(arr[min_idx]))
+            {
+
+                continue;
 
             }
             arr[i] = arr[i] ^ arr[min_idx];
@@ -266,6 +308,12 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i] == arr[min_idx])
+            {
+
+                continue;
+
+            }
             temp = arr[i];
             arr[i] = arr[min_idx];
             arr[min_idx] = temp;
@@ -293,6 +341,12 @@ public class SelectionSort implements Serializable
                     min_idx = j;
 
                 }
+
+            }
+            if (arr[i].equals(arr[min_idx]))
+            {
+
+                continue;
 
             }
             temp = arr[i];
@@ -324,6 +378,12 @@ public class SelectionSort implements Serializable
                 }
 
             }
+            if (arr[i] == arr[min_idx])
+            {
+
+                continue;
+
+            }
             temp = arr[i];
             arr[i] = arr[min_idx];
             arr[min_idx] = temp;
@@ -351,6 +411,12 @@ public class SelectionSort implements Serializable
                     min_idx = j;
 
                 }
+
+            }
+            if (arr[i].equals(arr[min_idx]))
+            {
+
+                continue;
 
             }
             temp = arr[i];
