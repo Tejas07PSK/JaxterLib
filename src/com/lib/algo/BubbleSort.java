@@ -258,7 +258,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static long [] for_lomgArray(long arr [])
+    public static long [] for_longArray(long arr [])
     {
         boolean flag;
         for (int i = 1; i<= (arr.length - 1); i += 1)
@@ -298,7 +298,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Long [] for_longArray(Long arr [])
+    public static Long [] for_LongArray(Long arr [])
     {
 
         boolean flag;
