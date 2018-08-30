@@ -19,7 +19,7 @@ public class QuickSort implements Serializable
 
     private static final Random r = new Random ();
 
-    public static byte [] for_byteArray(byte arr [])
+    public synchronized static byte [] for_byteArray(byte arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -116,7 +116,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static Byte [] for_ByteArray(Byte arr [])
+    public synchronized static Byte [] for_ByteArray(Byte arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -213,7 +213,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static short [] for_shortArray(short arr [])
+    public synchronized static short [] for_shortArray(short arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -310,7 +310,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static Short [] for_ShortArray(Short arr [])
+    public synchronized static Short [] for_ShortArray(Short arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -407,7 +407,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static int [] for_intArray(int arr [])
+    public synchronized static int [] for_intArray(int arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -504,7 +504,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static Integer [] for_IntegerArray(Integer arr [])
+    public synchronized static Integer [] for_IntegerArray(Integer arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -601,7 +601,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static long [] for_longArray(long arr [])
+    public synchronized static long [] for_longArray(long arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -698,7 +698,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static Long [] for_LongArray(Long arr [])
+    public synchronized static Long [] for_LongArray(Long arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -795,7 +795,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static float [] for_floatArray(float arr [])
+    public synchronized static float [] for_floatArray(float arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -893,7 +893,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static Float [] for_FloatArray(Float arr [])
+    public synchronized static Float [] for_FloatArray(Float arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -991,7 +991,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static double [] for_doubleArray(double arr [])
+    public synchronized static double [] for_doubleArray(double arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
@@ -1089,7 +1089,7 @@ public class QuickSort implements Serializable
 
     }
 
-    public static Double [] for_DoubleArray(Double arr [])
+    public synchronized static Double [] for_DoubleArray(Double arr [])
     {
 
         StackAsLinkedList <Integer> stk = new StackAsLinkedList <Integer> ();
