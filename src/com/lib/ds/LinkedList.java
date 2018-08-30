@@ -189,17 +189,28 @@ public class LinkedList <E> implements Serializable
         {
 
             Node tmp = this.start;
-            Node prev = null;
-            while (tmp != this.end)
+            if (this.length == 1)
             {
 
-                prev = tmp;
-                tmp = tmp.ptr;
+                this.start = this.end = null;
+                this.length -= 1;
 
             }
-            prev.ptr = null;
-            this.end = prev;
-            this.length -= 1;
+            else
+            {
+
+                Node prev = null;
+                while (tmp != this.end) {
+
+                    prev = tmp;
+                    tmp = tmp.ptr;
+
+                }
+                prev.ptr = null;
+                this.end = prev;
+                this.length -= 1;
+
+            }
             return (tmp.data);
 
         }
