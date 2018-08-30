@@ -15,7 +15,7 @@ public class BubbleSort implements Serializable
 
     private static final long serialVersionUID = 1L;
 
-    public static byte [] for_byteArray(byte arr [])
+    public synchronized static byte [] for_byteArray(byte arr [])
     {
         boolean flag;
         for (int i = 1; i<= (arr.length - 1); i += 1)
@@ -55,7 +55,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Byte [] for_ByteArray(Byte arr [])
+    public synchronized static Byte [] for_ByteArray(Byte arr [])
     {
 
         boolean flag;
@@ -96,7 +96,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static short [] for_shortArray(short arr [])
+    public synchronized static short [] for_shortArray(short arr [])
     {
         boolean flag;
         for (int i = 1; i<= (arr.length - 1); i += 1)
@@ -136,7 +136,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Short [] for_ShortArray(Short arr [])
+    public synchronized static Short [] for_ShortArray(Short arr [])
     {
 
         boolean flag;
@@ -177,7 +177,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static int [] for_intArray(int arr [])
+    public synchronized static int [] for_intArray(int arr [])
     {
         boolean flag;
         for (int i = 1; i<= (arr.length - 1); i += 1)
@@ -217,7 +217,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Integer [] for_IntegerArray(Integer arr [])
+    public synchronized static Integer [] for_IntegerArray(Integer arr [])
     {
 
         boolean flag;
@@ -258,7 +258,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static long [] for_longArray(long arr [])
+    public synchronized static long [] for_longArray(long arr [])
     {
         boolean flag;
         for (int i = 1; i<= (arr.length - 1); i += 1)
@@ -298,7 +298,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Long [] for_LongArray(Long arr [])
+    public synchronized static Long [] for_LongArray(Long arr [])
     {
 
         boolean flag;
@@ -339,7 +339,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static float [] for_floatArray(float arr [])
+    public synchronized static float [] for_floatArray(float arr [])
     {
         boolean flag;
         float temp = 0.0f;
@@ -380,7 +380,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Float [] for_FloatArray(Float arr [])
+    public synchronized static Float [] for_FloatArray(Float arr [])
     {
 
         boolean flag;
@@ -422,7 +422,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static double [] for_doubleArray(double arr [])
+    public synchronized static double [] for_doubleArray(double arr [])
     {
         boolean flag;
         double temp = 0.0;
@@ -463,7 +463,7 @@ public class BubbleSort implements Serializable
 
     }
 
-    public static Double [] for_DoubleArray(Double arr [])
+    public synchronized static Double [] for_DoubleArray(Double arr [])
     {
 
         boolean flag;
