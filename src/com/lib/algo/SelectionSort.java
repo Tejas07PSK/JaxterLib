@@ -15,7 +15,7 @@ public class SelectionSort implements Serializable
 
     private static final long serialVersionUID = 1L;
 
-    public static byte [] for_byteArray(byte arr [])
+    public synchronized static byte [] for_byteArray(byte arr [])
     {
 
         int min_idx = 0;
@@ -49,7 +49,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static Byte [] for_ByteArray(Byte arr [])
+    public synchronized static Byte [] for_ByteArray(Byte arr [])
     {
 
         int min_idx = 0;
@@ -83,7 +83,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static short [] for_shortArray(short arr [])
+    public synchronized static short [] for_shortArray(short arr [])
     {
 
         int min_idx = 0;
@@ -117,7 +117,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static Short [] for_ShortArray(Short arr [])
+    public synchronized static Short [] for_ShortArray(Short arr [])
     {
 
         int min_idx = 0;
@@ -151,7 +151,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static int [] for_intArray(int arr [])
+    public synchronized static int [] for_intArray(int arr [])
     {
 
         int min_idx = 0;
@@ -186,7 +186,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static Integer [] for_IntegerArray(Integer arr [])
+    public synchronized static Integer [] for_IntegerArray(Integer arr [])
     {
 
         int min_idx = 0;
@@ -220,7 +220,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static long [] for_longArray(long arr [])
+    public synchronized static long [] for_longArray(long arr [])
     {
 
         int min_idx = 0;
@@ -254,7 +254,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static Long [] for_LongArray(Long arr [])
+    public synchronized static Long [] for_LongArray(Long arr [])
     {
 
         int min_idx = 0;
@@ -288,7 +288,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static float [] for_floatArray(float arr [])
+    public synchronized static float [] for_floatArray(float arr [])
     {
 
         int min_idx = 0;
@@ -323,7 +323,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static Float [] for_FloatArray(Float arr [])
+    public synchronized static Float [] for_FloatArray(Float arr [])
     {
 
         int min_idx = 0;
@@ -358,7 +358,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static double [] for_doubleArray(double arr [])
+    public synchronized static double [] for_doubleArray(double arr [])
     {
 
         int min_idx = 0;
@@ -393,7 +393,7 @@ public class SelectionSort implements Serializable
 
     }
 
-    public static Double [] for_DoubleArray(Double arr [])
+    public synchronized static Double [] for_DoubleArray(Double arr [])
     {
 
         int min_idx = 0;
