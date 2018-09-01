@@ -433,4 +433,18 @@ public class LinkedList <E> implements Serializable
 
     }
 
+    public Node getStartOfList()
+    {
+
+        return (this.start);
+
+    }
+
+    public Node getEndOfList()
+    {
+
+        return (this.end);
+
+    }
+
 }
