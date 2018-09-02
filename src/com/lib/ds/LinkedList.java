@@ -15,25 +15,51 @@ public class LinkedList <E> implements Serializable
 
     private static final long serialVersionUID = 1L;
 
-    private class Node
+    public class Node
     {
 
         private E data;
         private Node ptr;
 
-        Node()
+        private Node()
         {
 
             this.ptr = null;
 
         }
 
-        Node(E data)
+        private Node(E data)
         {
 
             this();
             this.data = data;
 
+        }
+
+        public void setData(E data)
+        {
+
+            this.data = data;
+
+        }
+
+        public void setPtr(Node ptr)
+        {
+
+            this.ptr = ptr;
+        }
+
+        public E getData()
+        {
+
+            return (this.data);
+
+        }
+
+        public Node getPtr()
+        {
+
+            return (this.ptr);
         }
 
     }
