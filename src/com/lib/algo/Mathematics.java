@@ -182,7 +182,7 @@ public class Mathematics implements Serializable
     private synchronized static void refreshBoolArr(boolean arr [])
     {
 
-        int i = 0, len = arr.length + 1;
+        int i = 0, len = arr.length;
         while (i < len)
         {
 
