@@ -19,7 +19,12 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        System.out.println(Mathematics.isPrime(35));
+        for (long num : Mathematics.primeSieve(1000))
+        {
+
+            System.out.println(num);
+
+        }
 
     }
 
