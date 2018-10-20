@@ -110,7 +110,7 @@ public class Mathematics implements Serializable
         long limit = (long)(Math.floor(Math.sqrt(start_end[1])) + 1.0);
         List <Long> primes = primeSieve(limit);
         limit += 1;
-        long ori_prm_sz = primes.size();
+        long ori_prm_sz = primes.size(), getPrm = 0;
         long low = start_end[0], high = low + limit, i = 0, j = 0, lolim = 0;
         boolean mark [] = new boolean [(int)(limit + 1)];
         while (low < start_end[1])
@@ -126,17 +126,18 @@ public class Mathematics implements Serializable
             for (i = 0; i < ori_prm_sz; i += 1)
             {
 
-                lolim = (int) ((Math.floor(low / primes.get((int)i)) * primes.get((int)i)));
+                getPrm = primes.get((int)i);
+                lolim = (int)(Math.floor(low / getPrm) * getPrm);
                 if (lolim < low)
                 {
 
-                    lolim += primes.get((int)i);
+                    lolim += getPrm;
 
                 }
-                for (j = lolim; j < high; j += primes.get((int)i))
+                for (j = lolim; j < high; j += getPrm)
                 {
 
-                    mark[(int) (j - low)] = false;
+                    mark[(int)(j - low)] = false;
 
                 }
 
