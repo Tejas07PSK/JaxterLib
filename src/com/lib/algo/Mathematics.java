@@ -107,7 +107,7 @@ public class Mathematics implements Serializable
             return (Arrays.asList((new Long [] {0L})));
 
         }
-        long limit = (long) (Math.floor(Math.sqrt(start_end[1])) + 1.0);
+        long limit = (long)(Math.floor(Math.sqrt(start_end[1])) + 1.0);
         List <Long> primes = primeSieve(limit);
         limit += 1;
         long ori_prm_sz = primes.size();
@@ -182,7 +182,7 @@ public class Mathematics implements Serializable
     private synchronized static void refreshBoolArr(boolean arr [])
     {
 
-        int i = 0, len = arr.length;
+        int i = 0, len = arr.length + 1;
         while (i < len)
         {
 

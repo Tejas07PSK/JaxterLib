@@ -12,6 +12,7 @@ import com.lib.algo.*;
 import com.lib.ds.LinkedList;
 import com.lib.ds.StackAsLinkedList;
 import com.lib.algo.Mathematics;
+import java.util.List;
 
 public class Main
 {
@@ -19,7 +20,8 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        for (long num : Mathematics.primeSieve(1000))
+        List <Long> lt = Mathematics.segmentedPrimeSieve((new long [] {0, 1000}), (new long [] {1, 1}));
+        for (long num : lt)
         {
 
             System.out.println(num);
