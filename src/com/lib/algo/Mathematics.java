@@ -186,7 +186,7 @@ public class Mathematics implements Serializable
         while (i < len)
         {
 
-            arr[i] = true;
+            arr[i] = !(i < 2);
             i += 1;
 
         }
