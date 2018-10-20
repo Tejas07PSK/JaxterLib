@@ -20,7 +20,7 @@ public class Main
     public static void main (String args []) throws Exception
     {
 
-        List <Long> lt = Mathematics.segmentedPrimeSieve((new long [] {0, 1000}), (new long [] {1, 1}));
+        List <Long> lt = Mathematics.segmentedPrimeSieve((new long [] {53, 97}), (new long [] {1, 1}));
         for (long num : lt)
         {
 

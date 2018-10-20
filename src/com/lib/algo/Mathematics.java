@@ -158,7 +158,7 @@ public class Mathematics implements Serializable
 
 
         }
-        while (primes.get(0) < start_end[0])
+        /*while (primes.get(0) < start_end[0])
         {
 
             primes.remove(0);
@@ -175,7 +175,7 @@ public class Mathematics implements Serializable
 
             primes.remove(primes.size() - 1);
 
-        }
+        }*/
         return (primes);
 
     }
