@@ -16,7 +16,7 @@ public class Mathematics implements Serializable
 
     private static final long serialVersionUID = 1L;
 
-    public synchronized boolean isPrime(long n)
+    public synchronized static boolean isPrime(long n)
     {
 
         long limit = (long)Math.sqrt(n);
