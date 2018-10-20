@@ -134,7 +134,7 @@ public class Mathematics implements Serializable
                     lolim += getPrm;
 
                 }
-                for (j = lolim; j < high; j += getPrm)
+                for (j = lolim; j <= high; j += getPrm)
                 {
 
                     mark[(int)(j - low)] = false;
@@ -142,7 +142,7 @@ public class Mathematics implements Serializable
                 }
 
             }
-            for (i = low; i < high; i += 1)
+            for (i = low; i <= high; i += 1)
             {
 
                 if (mark[(int)(i - low)])
