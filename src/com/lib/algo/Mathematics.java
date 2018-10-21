@@ -111,7 +111,7 @@ public class Mathematics implements Serializable
         List <Long> primes = primeSieve(limit);
         limit += 1;
         long ori_prm_sz = primes.size(), getPrm = 0;
-        long low = start_end[0], high = low + limit, i = 0, j = 0, lolim = 0;
+        long low = limit, high = (2 * limit), i = 0, j = 0, lolim = 0;
         boolean mark [] = new boolean [(int)(limit + 1)];
         while (low < start_end[1])
         {
@@ -187,7 +187,7 @@ public class Mathematics implements Serializable
         while (i < len)
         {
 
-            arr[i] = !(i < 2);
+            arr[i] = true;
             i += 1;
 
         }
