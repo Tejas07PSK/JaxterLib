@@ -158,24 +158,28 @@ public class Mathematics implements Serializable
 
 
         }
-        /*while (primes.get(0) < start_end[0])
+        ori_prm_sz = primes.size();
+        while (primes.get(0) < start_end[0])
         {
 
             primes.remove(0);
+            ori_prm_sz -= 1;
 
         }
-        if (incl_excl[0] == 0)
+        if ((incl_excl[0] == 0) && (primes.get(0) == start_end[0]))
         {
 
             primes.remove(0);
+            ori_prm_sz -= 1;
 
         }
-        if (incl_excl[1] == 0)
+        if ((incl_excl[1] == 0) && (primes.get((int)(ori_prm_sz - 1)) == start_end[1]))
         {
 
-            primes.remove(primes.size() - 1);
+            primes.remove((int)(ori_prm_sz - 1));
+            ori_prm_sz -= 1;
 
-        }*/
+        }
         return (primes);
 
     }
